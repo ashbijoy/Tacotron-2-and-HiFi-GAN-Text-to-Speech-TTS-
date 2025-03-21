@@ -17,8 +17,6 @@ def text_to_speech(text):
     engine.runAndWait()
 
 
-    
-
 # Example usage
 if __name__ == "__main__":
     sample_text = "Hello Rekha Ma'am, My name is Daniel this is a test of the text to speech system. This group consists of Ashwin Bijoy, Reethika Shree and Nivya Raju. They belong to the Data Science Department. Thank You for listening to me"
