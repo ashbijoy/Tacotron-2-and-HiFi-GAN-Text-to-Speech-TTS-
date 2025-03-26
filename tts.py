@@ -9,6 +9,7 @@ from scipy.io.wavfile import write
 sys.path.append(os.path.abspath("./tacotron2"))
 sys.path.append(os.path.abspath("./hifi-gan"))
 
+
 from tacotron2.hparams import create_hparams
 from tacotron2.model import Tacotron2
 from tacotron2.text import text_to_sequence
