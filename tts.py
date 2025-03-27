@@ -113,7 +113,7 @@ def generate_speech(text, tacotron_model, vocoder, hparams, output_wav="output.w
         print(f"Avg: {np.mean(np.abs(audio)):.4f}")
         
         # Significant volume boost (100x) and normalization
-        audio *= 100  # Critical boost for minimal vocoder
+        audio *= 1000  # Critical boost for minimal vocoder
         peak = np.max(np.abs(audio))
         if peak > 1e-6:  # Only normalize if not silent
             audio = audio / peak
